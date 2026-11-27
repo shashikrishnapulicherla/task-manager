@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f3f4f6; color: #111827; }
+.container { max-width: 640px; margin: 0 auto; padding: 1rem; }
+h1 { text-align: center; }
+.card { background: #fff; padding: 1rem; border-radius: 10px; display: grid; gap: .6rem; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+input, textarea, select, button { font: inherit; padding: .6rem; border: 1px solid #d1d5db; border-radius: 6px; }
+button { background: #2563eb; color: #fff; border: 0; cursor: pointer; }
+button.secondary { background: #6b7280; }
+button.danger { background: #dc2626; }
+.row { display: flex; gap: .5rem; flex-wrap: wrap; }
+.row select { flex: 1; }
+.toolbar { display: flex; justify-content: space-between; align-items: center; margin: 1rem 0 .5rem; }
+#task-list { list-style: none; padding: 0; margin: 0; display: grid; gap: .6rem; }
+.task { background: #fff; padding: .8rem; border-radius: 10px; border-left: 6px solid; display: flex; justify-content: space-between; gap: .8rem; flex-wrap: wrap; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+.task.High { border-color: #dc2626; } .task.Medium { border-color: #f59e0b; } .task.Low { border-color: #16a34a; }
+.task.done .title { text-decoration: line-through; color: #9ca3af; }
+.title { font-weight: 600; } .desc { margin: .2rem 0; color: #4b5563; font-size: .9rem; }
+.badge { font-size: .75rem; padding: .1rem .5rem; border-radius: 99px; background: #e5e7eb; }
+.actions { display: flex; gap: .4rem; align-items: center; }
+.actions button { padding: .4rem .7rem; font-size: .85rem; }
+.empty { text-align: center; color: #6b7280; }
+@media (max-width: 480px) { .actions { width: 100%; } .actions button { flex: 1; } }
