@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Task Manager</h1>
+    <form id="task-form" class="card">
+      <input type="hidden" id="task-id">
+      <input id="title" type="text" placeholder="Task title" required maxlength="100">
+      <textarea id="description" placeholder="Description (optional)" rows="2"></textarea>
+      <div class="row">
+        <select id="priority" aria-label="Priority">
+          <option value="High">High</option>
+          <option value="Medium" selected>Medium</option>
+          <option value="Low">Low</option>
+        </select>
+        <button type="submit" id="submit-btn">Add Task</button>
+        <button type="button" id="cancel-btn" class="secondary" hidden>Cancel</button>
+      </div>
+    </form>
+    <div class="toolbar">
+      <select id="filter" aria-label="Filter by priority">
+        <option value="All">All priorities</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <span id="count"></span>
+    </div>
+    <ul id="task-list"></ul>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
