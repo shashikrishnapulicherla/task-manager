@@ -12,7 +12,7 @@ A responsive task manager built with HTML, CSS and vanilla JavaScript.
 ## Setup
 No build step or dependencies needed.
 
-1. Clone the repository: `git clone https://github.com/YOUR-USERNAME/task-manager.git`
+1. Clone the repository: `git clone https://github.com/shashikrishnapulicherla/task-manager.git`
 2. Open the `task-manager` folder.
 3. Double-click `index.html` to open it in your browser.
 
